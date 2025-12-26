@@ -4,7 +4,7 @@
   "main": "index.ts",
   "scripts": {
     "dev": "ts-node-dev --respawn --transpile-only backend/src/index.ts",
-    "build": "npm install && npm install --prefix frontend && npm run build --prefix frontend",
+    "build": "cd frontend && npm install && npm run build",
     "start": "nodemon --exec ts-node --transpile-only backend/src/index.ts"
   },
   "keywords": [],
