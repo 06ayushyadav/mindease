@@ -1,8 +1,8 @@
 import express from "express";
-import { chatWithGemini } from "../../controllers/chatbot/ai-chatbot.controller";
+import { chatWithGroq } from "../../controllers/chatbot/ai-chatbot.controller";
 
 const router = express.Router();
 
-router.post("/chat",chatWithGemini);
+router.post("/chat",chatWithGroq);
 
 export default router;
